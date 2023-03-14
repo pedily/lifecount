@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 
 const content = document.getElementById('content');
 
@@ -10,5 +10,11 @@ if (content) {
 		return <>yay from react</>;
 	};
 
-	render(<App />, content);
+	const root = createRoot(content);
+	root.render(<App />);
 }
+
+navigator.serviceWorker.register(
+	new URL('service-worker.ts', import.meta.url),
+	{ type: 'module', scope: '.' }
+);
