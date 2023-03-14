@@ -1,0 +1,2 @@
+(()=>{let e=[],a="";e=["/lifecount/index.html","/lifecount/icon-192.08a4bef9.png","/lifecount/lifecount.webmanifest","/lifecount/icon-512.da3fdd63.png","/lifecount/index.c72a1eab.js"],a="086b8b7d",self.addEventListener("install",(t=>t.waitUntil(async function(){const t=await caches.open(a);await t.addAll(e)}()))),self.addEventListener("activate",(e=>e.waitUntil(async function(){const e=await caches.keys();await Promise.all(e.map((e=>e!==a&&caches.delete(e))))}()))),self.addEventListener("fetch",(()=>{}))})();
+//# sourceMappingURL=service-worker.js.map
