@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,SAASC,eAAe,WAAYC,UAAY","sources":["src/app.ts"],"sourcesContent":["document.getElementById(\"content\")!.innerText = \"yay\";\n"],"names":["document","getElementById","innerText"],"version":3,"file":"index.13c09e90.js.map"}
