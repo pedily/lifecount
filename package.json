@@ -5,7 +5,7 @@
 	"scripts": {
 		"lint": "eslint \"**/*.{ts,tsx,json}\"",
 		"start": "parcel src/index.html",
-		"build": "parcel build src/index.html --out-dir dist/lifecount --public-url ./lifecount/"
+		"build": "parcel build --public-url /lifecount/ src/index.html"
 	},
 	"repository": {
 		"type": "git",
